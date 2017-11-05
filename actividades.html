@@ -143,8 +143,45 @@
 	<input type="submit" value="Enviar">
 </form>
 <br/>
+<h5><p align="left"> 1.	Realizar un programa que permita calcular el IVA del 19 % del valor de un producto. Dicha aplicación debe emitir por consola el valor del IVA, valor del producto sin IVA y valor del producto con IVA.</p></h5>
+<br/>
+<h5><p align="left">2.Cada estudiante debe analizar el código que se le brinda enfocado a vectores; cada línea debe ser comentada y de forma general explicar qué hace el programa, qué función cumple cada Ciclo for y para qué se utiliza el math.abs dentro del algoritmo.<br/><br/>
 
-<br/><br/><br/>
+import java.util.*;<br/>
+import javax.swing.*;<br/>
+class LecturaEscrituraMatriz<br/>
+{<br/>
+	public static void main(String[] args)<br/>
+	{<br/>
+	int<br/> filas=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite las Filas: "));<br/>
+	int columnas=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite las columnas: "));<br/>
+	int i,j;<br/>
+	Random R=new Random();<br/>
+	int A[][]=new int[filas][columnas];<br/>
+	//Lectura()<br/>
+	for(i=0;i<filas;i++)<br/>
+		 for(j=0;j<columnas;j++)<br/>
+			A[i][j]=Math.abs(R.nextInt()%99+1);<br/>
+	//Escritura<br/>
+	  System.out.println("   ------  Matriz Leida  -------");<br/>
+	  for(i=0;i<filas;i++)<br/>
+		{<br/>
+		System.out.println();<br/>	
+		  for(j=0;j<columnas;j++)<br/>
+		  {<br/>
+		    if(A[i][j]>=10)<br/>
+		 	 System.out.print(A[i][j]+"  ");<br/>
+		    else
+		     System.out.print(A[i][j]+"   ");<br/>
+		  }<br/>
+		}<br/>
+		System.out.println();<br/>
+		System.exit(0);<br/>
+	}<br/>
+}
+
+
+<br/><br/>
 <footer>
   <SMALL>  Escuela de Ciencias Básicas, Tecnología e Ingeniería<br/>
                     Curso de Lógica</SMALL> <br/>
