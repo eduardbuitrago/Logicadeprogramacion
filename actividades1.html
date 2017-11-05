@@ -4,54 +4,57 @@
 <link href="unad.ico" type="imagen/x-icon" rel="shortcut icon" />
 <style type="text/css">
 
-* {
-				margin:0px;
-				padding:0px;
+
+* 
+			
+			
+			.logo { 
+			float:left;
+			
 			}
+			
 
 			#header {
 				margin:auto;
 				width:500px;
-				font-family: sans-serif;
+				font-family:Arial, Helvetica, sans-serif;
+				
 			}
 
 			ul, ol {
 				list-style:none;
+				line-height:40px;
 			}
-
+/* propiedades del menu: color de fuente,color del menu, altura y anchor*/
+			.nav li a {
+				background-color:#006;
+				color:#FFF;
+				padding:0px 37px;
+				display:block;
+				text-decoration:none;
+				
+			}
+			/* para que el menu cambie de color cuando pase el cursor*/
+			.nav li a:hover {
+				background-color:#999;
+				
+			}
+ /* para que el menu que horizontal*/
 			.nav > li {
 				float:left;
 			}
 
-			.nav li a {
-				background-color:#F0B429;
-				color:#fff;
-				text-decoration:none;
-				padding:9px 14px;
-				display:block;
-			}
-
-			.nav li a:hover {
-				background-color:#F47920;
-			}
-
+			
 			.nav li ul {
-				display:inline;
+				/* display none: para que los submneu desaparecan*/
+				display:none;
 				position:absolute;
 				min-width:140px;
+			
 			}
-
+/* display block: para que los submneu aparescan*/
 			.nav li:hover > ul {
 				display:block;
-			}
-
-			.nav li ul li {
-				position:inline;
-			}
-
-			.nav li ul li ul {
-				right:-100px;
-				top:0px;
 			}
 
       input[type=search] {
@@ -59,8 +62,9 @@
           -webkit-appearance: none;
           -moz-appearance: none;
           -o-appearance: none;}
+		  
 					body {
-							margin-top: 100px;
+							margin-top: 70px;
 							margin-right: 40px;
 							margin-bottom: 10px;
 							margin-left: 70px;
@@ -76,6 +80,11 @@
               text-align: center;
               color: #fff;
           }
+		  .banner{
+			  margin:Rigth;
+				position:Rigth;
+				
+				}
 
       }
 
@@ -88,7 +97,7 @@
 <link href="css/html5reset.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     </head>
-    <body style="background-color: #F47920;">
+    <body style="background-color: #FFF;">
     <header>
         <hgroup>
             <h1>Curso Lógica de Programación</h1>
@@ -108,8 +117,8 @@
 		<div id="menuhorizontal" aling="center">
 			<ul class="nav">
 				<li><a href="index.html">Inicio</a></li>
-		    <li><a href="lecturas.html">Lecturas</a></li>
-        <li><a href="">Multimedia</a>
+				<li><a href="lecturas.html">Lecturas</a></li>
+				<li><a href="">Multimedia</a>
 				<ul>
 					<li><a href="multimedia.html">Que es logica programacíón</a></li>
 					<li><a href="multimedia1.html">Lenguajes de programación</a></li>
@@ -117,13 +126,13 @@
 			</li>
 				<li><a href="">Actividades</a>
 				<ul>
-					<li><a href="actividades.html"></a></li>
-					<li><a href="actividades1.html"></a></li>
-					<li><a href="actividades2.html"></a></li>
+					<li><a href="actividades.html">Item1	</a></li>
+					<li><a href="actividades1.html">Item2	</a></li>
+					<li><a href="actividades2.html">Item3	</a></li>
 				</ul>
 			</li>
-        <li><a href="autores.html">Autores</a></li>
-        </ul>
+				<li><a href="autores.html">Autores</a></li>
+				</ul>
 </div>
 <div id="sfcbck6czphjlnuhhkctu1wd3zg54bkez66"></div>
 <script type="text/javascript" src="https://counter8.freecounter.ovh/private/counter.js?c=bck6czphjlnuhhkctu1wd3zg54bkez66&down=async" async></script>
